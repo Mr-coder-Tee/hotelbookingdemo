@@ -109,7 +109,7 @@ export const Houses=[
     {
 
         id:8,
-        HouseName:'',
+        HouseName:'Senton house',
         location:{country:'South Africa',city:'johannesburg',town:'Senton'},
         bedrooms:'4',
         wifi:'avalible',
