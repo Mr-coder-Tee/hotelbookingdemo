@@ -8,7 +8,7 @@ export const house7=require('../assets/img/house7.jpg')
 export const house8=require('../assets/img/house8.jpg')
 export const house9=require('../assets/img/house9.jpg')
 export const house10=require('../assets/img/house10.jpg')
-
+ 
 export default{
     house1, house2, house3, house4, house5, house6, house7, house8, house9, house10,
 }
