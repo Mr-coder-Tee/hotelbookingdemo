@@ -23,7 +23,7 @@ export const Houses=[
         location:{country:'Egypt',city:'Sarai',town:'sahara'},
         bedrooms:'9',
         wifi:'not avaliavle',
-        stars:'4.9',
+        stars:'4.1',
         outsideImg:img.house2,
         insideImg:[img.insidehouse12,img.insidehouse4,img.insidehouse8],
         isPopular:true,
