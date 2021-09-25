@@ -77,8 +77,10 @@ const RenderSearchBar = () => {
   );
 };
 
-const HouseListCard = ({ item }) => {
+const HouseListCard = ({ item ,nav}) => {
+
   return (
+    <TouchableOpacity onPress={()=>nav.nav.navigate('DetailView',{item:item})}>
     <View style={styles.card}>
       <View style={styles.imgContainer}>
         <Image
@@ -174,23 +176,26 @@ const HouseListCard = ({ item }) => {
         </View>
       </View>
     </View>
+    </TouchableOpacity>
   );
 };
 
-const RenderHouseList = () => {
+const RenderHouseList = (nav) => {
   return (
     <View style={{  marginTop: 20, marginBottom: 10 }}>
       <FlatList
         horizontal
         showsHorizontalScrollIndicator={false}
         data={Houses}
-        renderItem={HouseListCard}
+        renderItem={({item})=>{
+          return <HouseListCard item={item} nav={nav}/>
+        }}
         keyExtractor={(item) => item.id}
       />
     </View>
   );
 };
-const PopularHouse=()=>{
+const PopularHouse=({navigation})=>{
   const [popHouses,setPopHouses]=useState();
   const [popHouse,setPopHouse]=useState();
   useEffect(()=>{
@@ -203,7 +208,6 @@ const PopularHouse=()=>{
         }
       });
       setPopHouse(rating);
-  console.log('>>>>',rating)
 
     }
 
@@ -220,6 +224,7 @@ const PopularHouse=()=>{
   },[])
 
   const ViewPop=()=>(
+    <TouchableOpacity onPress={()=>navigation.navigate('DetailView',{item:popHouse})}>
     <View style={{width:w,height:h,backgroundColor:COLORS.white,borderRadius:20,marginTop:20,padding:10,flexDirection:'row'}}>
       <View style={{width:100,height:'100%',borderRadius:10,overflow:'hidden',marginRight:10,}}>
       <Image source={popHouse.outsideImg} resizeMode='cover' style={{width:'100%',height:'100%'}}/>
@@ -242,6 +247,7 @@ const PopularHouse=()=>{
         </View>
         </View>
       </View>
+      </TouchableOpacity>
   )
   const ViewEmptyPop=()=>(
     <View>
@@ -264,13 +270,13 @@ const PopularHouse=()=>{
 
 }
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <RenderHeader />
       <RenderSearchBar />
-      <RenderHouseList />
-      <PopularHouse/>
+      <RenderHouseList nav={navigation}/>
+      <PopularHouse navigation={navigation}/>
     </SafeAreaView>
   );
 };

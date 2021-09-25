@@ -23,6 +23,7 @@ export const COLORS={
     ligthGray4:"#f8f8f9",
     transparent:"transparent",
     darkgray:"#898c95",
+    gold:"#FFD700",
 }
 
 export const SIZES={

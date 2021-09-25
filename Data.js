@@ -10,7 +10,7 @@ export const Houses=[
         wifi:'avaliable',
         stars:'4.6',
         outsideImg:img.house1,
-        insideImg:[],
+        insideImg:[img.insidehouse10,img.insidehouse3,img.insidehouse5],
         isPopular:true,
         price:'R1,750,00',
         dsc:'this house is very modern ,and yard covers 1km by 1.5 km of space'
@@ -25,7 +25,7 @@ export const Houses=[
         wifi:'not avaliavle',
         stars:'4.9',
         outsideImg:img.house2,
-        insideImg:[],
+        insideImg:[img.insidehouse12,img.insidehouse4,img.insidehouse8],
         isPopular:true,
         price:'R2,350,500',
         dsc:'Egypt houses for sale'
@@ -40,7 +40,7 @@ export const Houses=[
         wifi:'not avaliable',
         stars:'4.4',
         outsideImg:img.house3,
-        insideImg:[],
+        insideImg:[img.insidehouse10,img.insidehouse12,img.insidehouse1],
         isPopular:true,
         price:'R3,500,000',
         dsc:'pool house'
@@ -55,7 +55,7 @@ export const Houses=[
         wifi:'not avaliable',
         stars:'4.0',
         outsideImg:img.house4,
-        insideImg:[],
+        insideImg:[img.insidehouse1,img.insidehouse2,img.insidehouse3],
         isPopular:false,
         price:'R890,000',
         dsc:''
@@ -70,7 +70,7 @@ export const Houses=[
         wifi:'avalible',
         stars:'4.1',
         outsideImg:img.house5,
-        insideImg:[],
+        insideImg:[img.insidehouse3,img.insidehouse4,img.insidehouse5],
         isPopular:false,
         price:'R3,450,000',
         dsc:'southbroom house'
@@ -85,7 +85,7 @@ export const Houses=[
         wifi:'not avalible',
         stars:'4.5',
         outsideImg:img.house6,
-        insideImg:[],
+        insideImg:[img.insidehouse6,img.insidehouse7,img.insidehouse8],
         isPopular:true,
         price:'R2,100,00',
         dsc:'cape town city center house'
@@ -100,7 +100,7 @@ export const Houses=[
         wifi:'avalible',
         stars:'4.4',
         outsideImg:img.house8,
-        insideImg:[],
+        insideImg:[img.insidehouse10,img.insidehouse12,img.insidehouse13],
         isPopular:true,
         price:'R6,700,500',
         dsc:'paris france'
@@ -115,7 +115,7 @@ export const Houses=[
         wifi:'avalible',
         stars:'3.4',
         outsideImg:img.house7,
-        insideImg:[],
+        insideImg:[img.insidehouse9,img.insidehouse2,img.insidehouse15],
         isPopular:false,
         price:'R1,900,00',
         dsc:'south african house'
@@ -130,10 +130,10 @@ export const Houses=[
         wifi:'avalible',
         stars:'4.8',
         outsideImg:img.house9,
-        insideImg:[],
+        insideImg:[img.insidehouse13,img.insidehouse14,img.insidehouse15],
         isPopular:true,
         price:'R10,900,000',
-        dsc:'lake house in Spain'
+        dsc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestiae nihil porro ipsum similique reiciendis dicta magni molestias eos debitis laudantium perferendis veniam accusantium dolorem, voluptatum itaque ipsam iusto architecto vel quasi impedit rerum? Quam ipsa doloremque eveniet reiciendis odit!'
 
     },
     {
@@ -145,11 +145,13 @@ export const Houses=[
         wifi:'not avalible',
         stars:'3.6',
         outsideImg:img.house10,
-        insideImg:[],
+        insideImg:[img.insidehouse10,img.insidehouse11,img.insidehouse12],
         isPopular:false,
         price:'R2,578,500',
         dsc:'city house in south africa polokwane'
 
+
     },
+    
 
 ]
